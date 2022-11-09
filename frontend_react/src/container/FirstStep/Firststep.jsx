@@ -22,7 +22,7 @@ const FirstStep = () => {
     return (
 
 
-        <div className="app__container">
+        <div id="first__step" className="app__container">
 
             <motion.div
                 variants={scaleVariants}
