@@ -4,6 +4,8 @@ import Header from './Header/Header';
 import Skills from './Skills/Skills';
 import Testimonials from './Testimonials/Testimonials';
 import Works from './Works/Works';
+import FirstStep from './FirstStep/Firststep'
+
 
 export {
     About,
@@ -12,4 +14,6 @@ export {
     Skills,
     Testimonials,
     Works,
+    FirstStep,
+
 };

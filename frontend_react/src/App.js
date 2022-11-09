@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { About, Footer, Header, Skills, Testimonials, Works } from './container/index';
+import { About, FirstStep, Footer, Header, Skills, Testimonials, Works, } from './container/index';
 
-import { Navbar } from './components';
+import { Navbar, Scroll, } from './components';
 
 import './app.scss';
 
@@ -13,45 +13,9 @@ const App = () => {
 
 
             <Navbar />
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
             <Header />
+            <FirstStep />
+            <Scroll />
             <About />
             <Works />
             <Skills />

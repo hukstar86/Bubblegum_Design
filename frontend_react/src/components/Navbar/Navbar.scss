@@ -11,6 +11,47 @@
     z-index: 2;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 
+    button {
+        font-family: var(--font-face);
+          padding: 14px 38px;
+          box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+          line-height: 1.25;
+          background: var(--primary-color);
+          text-decoration: none;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+          position: relative;
+          border-radius: 3px;
+          border: 1px solid var(--secondary-color);
+          transition: background-color .6s ease;
+          overflow: hidden;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 50%;
+            transform-style: flat;
+            transform: translate3d(-50%,-50%,0);
+            background: rgba(white,.1);
+            transition: width .3s ease, height .3s ease;
+          }
+          &:focus,
+          &:hover {
+              background: var(--secondary-color);
+              color: var(--black-color);
+          }
+          &:active {
+            &:after {
+              width: 300px;
+              height: 300px;
+            }
+          }
+        }
+
     @media  screen and (max-width: 600px) {
         .app_navbar-sign{
             display: none;
@@ -117,7 +158,8 @@
         justify-content: flex-end;
         align-items: flex-end;
         flex-direction: column;
-        background: url('../../Assets/Mobile__Background.png');
+        // background: url('../../Assets/Mobile__Background.png');
+        background-color: var(--secondary-color);
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
@@ -157,7 +199,10 @@ li{
 
 
 }
+
+
 }
+
 
 @media screen and (min-width: 900px) {
     display: none;

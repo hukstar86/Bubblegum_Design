@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseCircleLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
-import Button from '../Button/Button';
 import { images } from '../../constants';
 import './Navbar.scss';
 
@@ -46,6 +45,13 @@ const Navbar = () => {
                                 </li>
                             ))}
                         </ul>
+
+
+
+
+
+
+
 
 
                     </motion.div>
